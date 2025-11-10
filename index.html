@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Characters</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Rick and Morty Characters</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar personagem pelo nome...">
+                <button id="searchButton">Buscar</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="loading" class="loading">Carregando personagens...</div>
+        <div id="charactersContainer" class="characters-grid"></div>
+        <div id="errorMessage" class="error-message"></div>
+        <div id="loadMoreContainer" class="load-more-container">
+            <button id="loadMoreButton" class="load-more-btn">Carregar Mais</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Desenvolvido com a API Rick and Morty</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
